@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Souled Store</title>
+    <style>
+      #logo {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+      }
+      #heading {
+        text-align: center;
+        background-color: red;
+        color: white;
+        height: 40px;
+        font-size: 25px;
+      }
+      #h2 {
+        text-align: center;
+        font-size: 30px;
+      }
+      #icons {
+        display: inline-block;
+      }
+      span {
+        font-size: 20px;
+        margin-left: 10px;
+      }
+      #categories {
+        display: inline-block;
+        padding-left: 25%;
+        padding-top: 0%;
+        height: 50px;
+      }
+      #offers {
+        display: block;
+        size: 1920px;
+      }
+      label {
+        display: block;
+        min-width: 90px;
+        text-align: center;
+      }
+      input,
+      textarea {
+        font: 1em sans-serif;
+        width: 300px;
+        box-sizing: border-box;
+        border: 1px solid #999;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: #000;
+      }
+
+      textarea {
+        vertical-align: top;
+        height: 5em;
+      }
+      #login {
+        text-align: center;
+      }
+      #form {
+        text-align: center;
+        margin: auto;
+      }
+      form {
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+        display: inline-block;
+        width: 500px;
+        height: 500px;
+      }
+      #c1{
+        display: inline-block;
+        margin-left: 5%;
+      }
+      #c2{
+        display: inline-block;
+        margin-left: 10%;
+      }
+      #c3{
+        display: inline-block;
+        margin-left: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="logo">
+      <img
+        style="height: 50px,"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0QppcKLzzP6Pj9aVhv60rwycxXOi0ubanz0tI5QomqA&s"
+        alt="Souled Store"
+      />
+    </div>
+    <div id="categories">
+      <span>Summer'24 New</span>
+      <span>TopWear</span>
+      <span>BottomWear</span>
+      <span>Shoe & Accessories</span>
+      <span>Restocked</span>
+      <span>Themes</span>
+    </div>
+    <div id="icons">
+      <span
+        ><img
+          style="height: 60px"
+          src="data:image/png;base64,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"
+          alt=""
+      /></span>
+      <span
+        ><img
+          style="height: 40px"
+          src="https://static.vecteezy.com/system/resources/previews/005/544/718/non_2x/profile-icon-design-free-vector.jpg"
+          alt=""
+      /></span>
+      <span
+        ><img
+          style="height: 40px"
+          src="https://static.vecteezy.com/system/resources/previews/027/381/351/original/shopping-cart-icon-shopping-trolley-icon-shopping-cart-logo-container-for-goods-and-products-economics-symbol-design-elements-basket-symbol-silhouette-retail-design-elements-vector.jpg"
+          alt=""
+      /></span>
+      <span
+        ><img
+          style="height: 40px"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8moNqBsueRrMKWQJeVKTeO2oHHUyfS6jr_g&s"
+          alt=""
+      /></span>
+    </div>
+    <br />
+    <div id="heading">HOMEGROWN INDIAN BRAND</div>
+    <br />
+    <div id="h2">Over <b>6 Million </b>Happy Customers</div>
+    <br />
+    <div id="offers">
+      <img
+        src="https://prod-img.thesouledstore.com/public/theSoul/uploads/themes/7720320220714120939.jpg?format=webp&w=1500&dpr=1.3"
+        alt=""
+      />
+    </div>
+    <br />
+    <div id="form">
+      <span>Register With The Souled Store</span>
+      <br />
+      <form action="loginPage">
+        <select name="Method" id="">
+          <option value="1">Login</option>
+          <option value="2">Register</option>
+        </select>
+        <br />
+        <div id="login">
+          <button>Facebook</button>
+          <button>Google</button>
+        </div>
+        <br />
+        <span>-OR-</span>
+        <br />
+        <label for="name">First Name:</label>
+        <input type="text" />
+        <br />
+        <label for="surname">Last Name:</label>
+        <input type="text" />
+        <br />
+        <label for="email">E-Mail ID:</label>
+        <input type="email" />
+        <br />
+        <label for="password">Choose New Password:</label>
+        <input type="password" />
+        <br />
+        <label for="password">Confirm Password:</label>
+        <input type="password" />
+        <br />
+        <label for="phone">Mobile Number</label>
+        <input type="number" />
+        <br />
+        <label for="gender">Select Your Gender</label>
+        <select name="gender" id="">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="others">Others</option>
+        </select>
+      </form>
+    </div>
+    <br />
+    <div>
+      <div id="c1">
+        <img
+          style="height: 400px"
+          src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/new-arrivals-7_1_6oCjEUh.jpg?format=webp&w=360&dpr=1.3"
+          alt=""
+        />
+        <h1>Disney Quack Hard</h1>
+        <hr />
+        <h2>Oversized T-Shirt</h2>
+        <h2>$ 99</h2>
+        <h3>MRP. Inc of all taxes</h3>
+      </div>
+      <div id="c2">
+        <img
+          style="height: 400px"
+          src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/new-arrivals-2_1_ZWSt4fc.jpg?format=webp&w=360&dpr=1.3"
+          alt=""
+        />
+        <h1>TSS Originals: Jungle Time</h1>
+        <hr />
+        <h2>Shirts</h2>
+        <h2>$ 115</h2>
+        <h3>MRP. Inc of all taxes</h3>
+      </div>
+      <div id="c3">
+        <img
+          style="height: 400px"
+          src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/new-arrivals-5_1_Thtl5cR.jpg?format=webp&w=360&dpr=1.3"
+          alt=""
+        />
+        <h1>Denim : Blue Cloud</h1>
+        <hr />
+        <h2>Shorts</h2>
+        <h2>$ 115</h2>
+        <h3>MRP. Inc of all taxes</h3>
+      </div>
+    </div>
+  </body>
+</html>
